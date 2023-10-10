@@ -1,0 +1,36 @@
+@media screen and (max-width: 47.9375em) { 
+    .logo-container .name {
+        color: blue;
+    }
+    .navbar .navbar-links {
+        justify-content: center;
+    }
+    .navbar .navbar-links li:not(.except) {
+        display: none;
+    }
+    .dropdown {       
+        padding-top: 28px;
+    }
+      
+    .dropdown-icon {
+        display: block;
+    }
+}  
+
+@media screen and (min-width: 63.9375em) {
+    .logo-container .name {
+        color: yellow;
+    }
+}
+
+@media screen and (min-width: 48em) and (max-width: 63.9375em) {
+    .logo-container .name {
+        color: pink;
+    }
+} 
+
+ /* @media screen and (min-width: 64em) {
+     .logo-container .name {
+        color: green;
+    }
+}   */
