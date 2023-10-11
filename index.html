@@ -10,8 +10,13 @@
 </head>
 <body>
     
-    <header>
+    <header>   
         
+        <video id='background-video' autoplay loop muted plays-inline>
+            <source src="img/video.mp4" type="video/mp4">
+        </video>
+        <!-- <section id='background-video'><video autoplay muted loop src="img/video.mp4" id="video"></video></section>       -->
+
         <div class="navbar" id="underline-progress">
             <ul class="navbar-links">
                 <li><a href="work" class="progress-bar">Work<span class="slider"></span></a></li>
@@ -27,9 +32,6 @@
                 <li><a href="contact" class="progress-bar">Contact<span class="slider"></span></a></li>
             </ul>
         </div> 
-        
-        <section id='background-video'><video autoplay muted loop src="img/video.mp4" id="video"></video></section>
-
         <div class="dropdown">
             <i class="fa-solid fa-bars dropdown-icon" onclick="showDropdown()"></i>
             <div id="myDropdown" class="dropdown-content">
@@ -38,49 +40,41 @@
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
             </div>
-          </div>
+        </div>
+
+        <section id="welcome-section">
+            <div class="intro-left">                
+                <h1>My name is Ana and <br> 
+                    I'm passionate about <br> 
+                    web <span id="typed-words"></span></h1>
+            </div>
+            <div class="intro-right">
+                <p>Find me also on <br> 
+                    GitHub and LinkedIn<br> 
+                </p>
+            </div>              
+        </section>
+        <section id="btn-section">
+            <button class="video-button">See Work</button>  
+        </section>       
+        
     </header>
 
     <main>
         <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
 
-        <section id="testimonials">
-            <h2>Our happy stories ♥</h2>
-            <div class="testimonials">
-                <div>
-                    <img src="img/t1.webp" alt="" />
-                    <p>
-                        "One day, after a trip, the opportunity to adopt Eros came into my life. I had never had cats, but inexplicably I decided to give it a try, because they told me its story. Now I would tell all the people to adopt because cats are very faithful beings and they make you smile when you need it most, adopting is one of the best things that can happen to them in life"
-                    </p>
-                </div>
-                <div>
-                    <img src="img/t2.webp" alt="" />
-                    <p>
-                        "The day I adopted her I discovered that she adopted me, and not the other way around. That he is not trash, but a treasure. That how they treat us does not define who we really are. Since then, she fills me with surprises and lessons; We have been growing together and she has been my partner in this amazing journey"
-                    </p>
-                </div>
-                <div>
-                    <img src="img/t3.webp" alt="" />
-                    <p>
-                        "Our bond has been strengthened from many experiences and it is a special bond. I hope people understand the kind of love that cats have, and respect this love...You can't imagine how different, interesting and beautiful life becomes when we love a being like a cat!"
-                    </p>
-                </div>
-                <div>
-                    <img src="img/t4.webp" alt="" />
-                    <p>
-                        "For me, adopting a cat has been like adopting a baby, the house lit up for us since it arrived, but what weighs more is knowing that I have saved a kitten from living and suffering on the streets. When I see him hugging the sheets with his eyes half-closed, I know I did the right thing by opening my front door for him"
-                    </p>
-                </div>
-                <div>
-                    <img src="img/t5.webp" alt="" />
-                    <p>
-                        "I thought I was the one who was going to change my cat's life by giving her a home, but what I didn't know was that along the way I was also going to change mine. Adopting sugar has improved my day to day in many aspects"
-                    </p>
-                </div>
-            </div>
+
+        <section id="about-section">
+            <h2>about section</h2>
         </section>
 
-       
+        <section id="skills-section">
+            <h2>skilss section</h2>
+        </section>
+
+        <section id="work-section">
+            <h2>work section</h2>
+        </section>       
     </main>
     
 
