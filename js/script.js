@@ -57,10 +57,6 @@ function animateWords() {
 animateWords();
 
 
-
-
-
-
 /* button on scroll */
 
 mybutton = document.getElementById("back-to-top");

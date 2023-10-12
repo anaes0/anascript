@@ -17,10 +17,10 @@
         </video>
         <!-- <section id='background-video'><video autoplay muted loop src="img/video.mp4" id="video"></video></section>       -->
 
-        <div class="navbar" id="underline-progress">
+        <div class="navbar">
             <ul class="navbar-links">
-                <li><a href="work" class="progress-bar">Work<span class="slider"></span></a></li>
-                <li><a href="skills" class="progress-bar">Skills<span class="slider"></span></a></li>                
+                <li><a href="#work" class="underline-progress-bar">Work<span class="slider"></span></a></li>
+                <li><a href="#skills" class="underline-progress-bar">Skills<span class="slider"></span></a></li>                
                 <li class='except'>
                     <a href="#">
                         <div class="logo-container">
@@ -28,11 +28,11 @@
                             <div class="web">web developer</div>
                         </div>
                     </a></li>                
-                <li><a href="about" class="progress-bar">About<span class="slider"></span></a></li>
-                <li><a href="contact" class="progress-bar">Contact<span class="slider"></span></a></li>
+                <li><a href="#about" class="underline-progress-bar">About<span class="slider"></span></a></li>
+                <li><a href="#contact" class="underline-progress-bar">Contact<span class="slider"></span></a></li>
             </ul>
         </div> 
-        <div class="dropdown">
+        <!-- <div class="dropdown">
             <i class="fa-solid fa-bars dropdown-icon" onclick="showDropdown()"></i>
             <div id="myDropdown" class="dropdown-content">
                 <li><a href="work">Work</a></li>
@@ -40,7 +40,7 @@
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
             </div>
-        </div>
+        </div> -->
 
         <section id="welcome-section">
             <div class="intro-left">                
@@ -50,31 +50,57 @@
             </div>
             <div class="intro-right">
                 <p>Find me also on <br> 
-                    GitHub and LinkedIn<br> 
+                    <a href="#">GitHub</a> and <a href="#">LinkedIn</a><br> 
                 </p>
             </div>              
         </section>
         <section id="btn-section">
-            <button class="video-button">See Work</button>  
+            <!-- <button class="video-button" href="#work">See Work</button>   -->
+            <a class="button video-button" href="#work">See Work</a>
         </section>       
         
     </header>
 
     <main>
-        <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
+        
+    <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
 
+    <!-- work section -->
+    <section id="work">
+        <h2>Find bellow, a selection of my work.</h2>
+        <div class="projects-container">
+            <!-- projects list-->           
+            <div class="project-box-container">
+                <div class="project-box-container-inner">
+                    <h3 class="project-box-name">Photography Website</h3>
+                    <h4 class="project-box-subtitle">The Art Of Analog<span>react</span></h4>
+                    <p class="project-box-text">An analog photography website that includes:<br>
+                        - Login System: Firebase Authentication (Google as provider).<br>
+                        - Remote data source: Google Maps API.<br>
+                        - Blog System: CRUD operations implemented.<br>
+                        - NonSQL Database: FireStore.<br>
+                        - Unit testing (React Testing Library).<br>
+                    </p>
+                    <div class="project-box-icon">
+                        <ul>
+                            <li class=""><a href="" target="_blank"><i class="fab fa-github"></i>Code</a></li>        
+                            <li><a href="" target="_blank"><i class="fa fa-magnifying-glass"></i>Live Site</a></li>  
+                        </ul>
+                   </div>               
+               </div> 
+               <div class="project-box-img"> 
+                 <a href="#"><img src="img/project-photography.jpg" alt=""/></a>   
+                </div> 
+            </div>
+            
+                
+                        
+                              
+        </div>          
+    </section>
+    
+       
 
-        <section id="about-section">
-            <h2>about section</h2>
-        </section>
-
-        <section id="skills-section">
-            <h2>skilss section</h2>
-        </section>
-
-        <section id="work-section">
-            <h2>work section</h2>
-        </section>       
     </main>
     
 
