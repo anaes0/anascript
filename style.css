@@ -356,18 +356,52 @@ header {
     display: flex;
     flex-direction: column;    
 }
+.projects .project-box-container:not(:first-child) {
+    padding-top: 6rem;
+} 
 .project-box-container {
     display: flex;
     align-items: start;
-    justify-content: space-between;
     height: 60vh;
-    padding: 2rem;
-   
+    padding: 2.5rem;      
 }
-.project-box-container-inner {
+.project-box-container-inner-right {
     flex: 50%;
-    padding: 0rem 4rem 0 0;    
+    padding: 0 4rem 0 0;    
 }
+.project-box-container-inner-left {
+    flex: 50%;
+    padding: 0 0 0 4rem;     
+}
+.project-box-img-right {
+    flex-basis: 50%;
+    height: 100%;
+    padding: 0 0 0 4rem;  
+    overflow: hidden;
+    position: relative;
+}
+.project-box-img-left {
+    flex-basis: 50%;
+    height: 100%;
+    padding: 0 4rem 0 0;  
+    overflow: hidden;
+    position: relative;
+} 
+
+.project-box-img-right img,
+.project-box-img-left img { 
+    border-radius: var(--global-radius);
+}
+
+.project-box-img-right img,
+.project-box-img-left img  {
+    transition: 0.3s ease transform;
+}
+.project-box-container:hover .project-box-img-right img,
+.project-box-container:hover .project-box-img-left img {
+    transform: scale(1.1);
+} 
+
 .project-box-name {
     border-bottom: 1px solid black;
 }
@@ -376,6 +410,10 @@ header {
     justify-content: space-between;
     padding: 8px 0 8px 0;
     font-size: small;    
+}
+.project-box-text i {
+    font-size: 12px;
+    color: var(--color-brown);
 }
 .project-box-icon {
     display: flex;
@@ -393,6 +431,8 @@ header {
 .project-box-icon ul li i {
     padding: 0 10px 0 0;
 }
+
+
 /* .project-box-img {
     flex: 50%;
     padding: 0rem 0 0 2rem; 
@@ -404,23 +444,17 @@ header {
     border-radius: var(--global-radius);
 } */ 
 
-.project-box-img {
+/* .project-box-img {
     flex-basis: 50%;
     height: 100%;
     overflow: hidden;
     position: relative;
-  }
-  .project-box-container-inner:after {
+  } */
+  /* .project-box-container-inner:after {
     content: "";
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
-  }
-  .project-box-img img {
-    transition: 0.3s ease transform;
-  }
-  .project-box-container:hover .project-box-img img {
-    transform: scale(1.1);
   }
