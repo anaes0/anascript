@@ -28,7 +28,7 @@ document.addEventListener('scroll', () => {
 
 
 /* intro animated text */
-    var words = ['development.', 'design.'],
+    var words = ['development.', 'design.', 'minimalism.'],
     wordWrapper = document.getElementById('typed-words'),
     wordWrapperContent = wordWrapper.innerHTML,
     addingWord = false,
