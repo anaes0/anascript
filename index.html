@@ -17,7 +17,7 @@
         </video>
         <!-- <section id='background-video'><video autoplay muted loop src="img/video.mp4" id="video"></video></section>       -->
 
-        <div class="navbar">
+        <navbar class="navbar">
             <ul class="navbar-links">
                 <li><a href="#work" class="underline-progress-bar">Work<span class="slider"></span></a></li>
                 <li><a href="#skills" class="underline-progress-bar">Skills<span class="slider"></span></a></li>                
@@ -25,13 +25,13 @@
                     <a href="#">
                         <div class="logo-container">
                             <div class="name">ana</div>
-                            <div class="web">web developer</div>
+                            <div class="web" id="web">web developer</div>
                         </div>
                     </a></li>                
                 <li><a href="#about" class="underline-progress-bar">About<span class="slider"></span></a></li>
                 <li><a href="#contact" class="underline-progress-bar">Contact<span class="slider"></span></a></li>
             </ul>
-        </div> 
+        </navbar> 
         <!-- <div class="dropdown">
             <i class="fa-solid fa-bars dropdown-icon" onclick="showDropdown()"></i>
             <div id="myDropdown" class="dropdown-content">
@@ -67,7 +67,14 @@
 
     <!-- work section -->
     <section id="work">
-        <h2>Find bellow, a selection of my work.</h2>
+        <h2 class="work-title">Find bellow, a 
+            <!-- <span class="border-rounded">selection</span> -->
+            <div class="circle-border">
+                <div class="circle"><span>selection</span></div>
+            </div>
+            of my work.
+        </h2>
+
         <div class="projects">
             <!-- projects list-->           
             <div class="project-box-container">
@@ -202,7 +209,12 @@
                               
         </div>          
     </section>
+
+    <section>
+      
+    </section>
     
+   
        
 
     </main>

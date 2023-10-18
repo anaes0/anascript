@@ -1,25 +1,31 @@
+/* sticky header when scrolled */
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('navbar');
+
+    if(window.scrollY > 100) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  })
+
+
+/* hide element when scrolling */
+document.addEventListener('scroll', () => {
+  const websubtitle = document.getElementById('web');
+
+  if(window.scrollY > 100) {
+    websubtitle.style.display = 'none'; // hide web subtitle
+  } else if(window.scrollY < 100) {
+    websubtitle.style.display = 'inline'; // show web subtitle
+  }  
+})
+
+
+
+
 /* dropdown menu */
 
-function showDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-  
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-icon')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
-
-  
 
 /* intro animated text */
     var words = ['development.', 'design.'],
@@ -53,12 +59,11 @@ function animateWords() {
       }, 150);
     }
     
-// Call the function to start the animation
+// call the function to start the animation
 animateWords();
 
 
 /* button on scroll */
-
 mybutton = document.getElementById("back-to-top");
 
 // if user scrolls down 20px from the top of the document, show the button
