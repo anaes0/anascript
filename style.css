@@ -128,13 +128,6 @@ header {
     transition: background-color 0.4s ease-in-out;
 }
 
-navbar.scrolled {
- background-color: var(--color-white);
- opacity: 0.97;
- transition: background-color 0.4s ease-in-out;
- height: 100px;
-}
-
 /* video */
 #background-video, 
 #video {
@@ -161,6 +154,16 @@ navbar.scrolled {
     height: 60px;
     padding: 3rem 0 0;
 }
+navbar.scrolled {
+    display: flex;
+    height: 60px;
+    padding-bottom: 2rem;
+    background-color: var(--color-white);
+    opacity: 0.98;    
+    transition: background-color 0.4s ease-in-out;
+}
+
+
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
@@ -211,12 +214,6 @@ navbar.scrolled {
     letter-spacing: 1rem;  
     line-height: 60px; 
 }
-
-.logo.scrolled {
-    background-color: yellow; 
-}
-
-
 .logo-container .web {
     letter-spacing: 8px;
     font-size: 9.5px;

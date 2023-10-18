@@ -1,11 +1,11 @@
 /* sticky header when scrolled */
   document.addEventListener('scroll', () => {
-    const header = document.querySelector('navbar');
+    const navbar = document.querySelector('navbar');
 
     if(window.scrollY > 100) {
-      header.classList.add('scrolled');
+      navbar.classList.add('scrolled');
     } else {
-      header.classList.remove('scrolled');
+      navbar.classList.remove('scrolled');
     }
   })
 
