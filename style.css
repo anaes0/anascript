@@ -244,18 +244,21 @@ navbar.scrolled {
     border: none;
     border-radius: var(--global-radius);
     outline: none;
+    color: var(--color-white);
     background-color: var(--color-brown);
-    color: white;
     cursor: pointer;
-    padding: 1rem 15px;
-    font-size: 1.5rem; 
+    padding: 1rem 10px;
+    font-size: 1rem; 
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
 }
 
 #back-to-top:hover {
-    background-color:var(--color-darkgray);
+    color: var(--color-brown);
+    border: 1px solid var(--color-brown);
     transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    font-size: 1.1rem;
     -webkit-transition: all 0.3s ease-in-out;
 }
 
@@ -507,14 +510,16 @@ navbar.scrolled {
   text-align: start;
   padding-left: 4rem;
 }
-
+#about .col-right h2 {
+  text-align: start;
+  padding: 0 0 20px 0;
+}
 #about .col-right p {
-  margin-bottom: 20px;
-    font-size: 1.2rem;
-    margin-top: 5px;
-    line-height: 2.5rem;
-    font-weight: 300;
-    letter-spacing: 0.05rem;
+  padding: 10px 0 20px 0;
+  font-size: 1.2rem; 
+  line-height: 2.5rem;
+  font-weight: var(--global-weight-normal);
+  letter-spacing: 0.03rem;
 }
 
 #about .col-left .about-img {
