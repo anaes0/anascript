@@ -153,6 +153,7 @@ header {
     width: 100%;
     height: 60px;
     padding: 3rem 0 0;
+    transition: background-color 0.4s ease-in-out;
 }
 navbar.scrolled {
     display: flex;
@@ -222,7 +223,6 @@ navbar.scrolled {
 /* dropdown menu */
 
 /* back to top button */
-
 #back-to-top {
     display: none;
     position: fixed;
@@ -245,6 +245,20 @@ navbar.scrolled {
     background-color:var(--color-darkgray);
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+}
+
+/* animated sections */
+.animation {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.7s ease-out;
+    transition-delay: 0.4s;
+
+}
+
+.scroll-animation {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 /* WELCOME SECTION */
@@ -333,15 +347,16 @@ navbar.scrolled {
     justify-content: center;
 }
 
+/* golden circle */
 .circle-border {
     display: flex;
     justify-content: center;
     width: 150px;
     height: auto;
-    padding: 10px; 
-  }
+    padding: 10px;
+}
   
-  .circle {
+.circle {
     width: 200px;
     height: 50px;
     display: flex;
@@ -356,44 +371,41 @@ navbar.scrolled {
     font-weight: 300;
     position: relative;
     vertical-align: middle;
-  }
+    border: 2px solid transparent; /* Move the border style here */
+    transition: border-right-color 0.15s linear 0.10s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
+}
   
-  .circle::before,
-  .circle::after {
+.circle::before,
+.circle::after {
     box-sizing: inherit;
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 50%;
-  }
-  
-  .circle::before,
-  .circle::after {
     top: 0;
     left: 0;
-  }
+}
   
-  .circle::before {
+.circle::before {
     border: 2px solid transparent;
-  }
+}
   
-  .circle:hover::before {
+.circle::before {
     border-top-color: var(--color-gold);
     border-right-color: var(--color-gold);
     border-left-color: var(--color-gold);
     border-bottom-color: var(--color-gold);
-    transition: border-right-color 0.15s linear 0.10s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
-  }
+}
   
-  .circle::after {
+.circle::after {
     border: 0 solid transparent;
-  }
+}
   
-  .circle:hover::after {
+.circle::after {
     /* border-top: 1px solid var(--color-gold); */
     transition: transform 0.9s linear 0s;
-  }
+}
 
 
 
