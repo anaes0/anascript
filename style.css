@@ -1,5 +1,5 @@
 :root {
-    --color-lightgray: #f5f5f5;
+    --color-lightgray: #f2f4f3;
     --color-mediumgray: #eeeeee;
     --color-darkgray: #373737;
     --color-text: #0a0908;;
@@ -30,7 +30,6 @@
 body {
     overflow-x: hidden;
     height: 100vh;
-    background-color: #f2f4f3;
     font-size: 12px;
     line-height: 20px;
 }
@@ -110,6 +109,20 @@ section h2 {
     text-align: center;
 }
 
+/* sections background */
+section.section-lightgray {
+    background-color: var(--color-lightgray);
+}
+section.section-white {
+    background-color: var(--color-white);
+}
+section.section-brown {
+    background-color: var(--color-brown);
+}
+section.section-brown {
+    background-color: var(--color-brown);
+}
+
 .button {
     display: inline-block;
     line-height: inherit;
@@ -121,7 +134,6 @@ section h2 {
 } 
 
 /* --- HEADER --- */
-
 header {
     position: relative;
     min-height: 100vh;
@@ -347,16 +359,17 @@ navbar.scrolled {
     justify-content: center;
 }
 
-/* golden circle */
+/* golden border */
 .circle-border {
     display: flex;
     justify-content: center;
     width: 150px;
     height: auto;
     padding: 10px;
-}
+  }
   
 .circle {
+    position: relative;
     width: 200px;
     height: 50px;
     display: flex;
@@ -369,10 +382,6 @@ navbar.scrolled {
     box-sizing: border-box;
     font-size: inherit;
     font-weight: 300;
-    position: relative;
-    vertical-align: middle;
-    border: 2px solid transparent; /* Move the border style here */
-    transition: border-right-color 0.15s linear 0.10s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
 }
   
 .circle::before,
@@ -389,25 +398,16 @@ navbar.scrolled {
   
 .circle::before {
     border: 2px solid transparent;
+    transition: border-right-color 0.15s linear 0.10s, border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
 }
   
-.circle::before {
+.scroll-show.circle::before {
     border-top-color: var(--color-gold);
     border-right-color: var(--color-gold);
     border-left-color: var(--color-gold);
     border-bottom-color: var(--color-gold);
-}
-  
-.circle::after {
-    border: 0 solid transparent;
-}
-  
-.circle::after {
-    /* border-top: 1px solid var(--color-gold); */
-    transition: transform 0.9s linear 0s;
-}
-
-
+    transition: border-right-color 0.15s linear 0.10s, border-top-color 0.15s linear, border-right-color 0.15s l
+} 
 
 .projects .project-box-container:not(:first-child) {
     padding-top: 6rem;
@@ -484,34 +484,48 @@ navbar.scrolled {
 .project-box-icon ul li i {
     padding: 0 10px 0 0;
 }
+/* WORK SECTION END */
 
-
-/* .project-box-img {
-    flex: 50%;
-    padding: 0rem 0 0 2rem; 
+/* ABOUT SECTION */
+#about .about {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.project-box-img img {
-    width: 100%; /* or any custom size */
-    /* height: 100%; 
-    object-fit: contain;  
+#about .col-left {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  height: 85%;
+  width: 80%;
+}
+#about .col-right {
+  flex: 50%;
+  width: 100%;
+  text-align: start;
+  padding-left: 4rem;
+}
+
+#about .col-right p {
+  margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+#about .col-left .about-img {
+  height: 100%;
+  width: 80%;
+  position: relative;
+  border: 10px solid transparent;
+
+}
+#about .col-left .about-img img {
     border-radius: var(--global-radius);
-} */ 
+}
 
-/* .project-box-img {
-    flex-basis: 50%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-  } */
-  /* .project-box-container-inner:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-  }
-*/
-
-
-  
+ /* ABOUT SECTION END */ 

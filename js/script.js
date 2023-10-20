@@ -21,6 +21,17 @@ document.addEventListener('scroll', () => {
 });
 
 /* circle styling appears when scrolled */
+document.addEventListener('scroll', function () {
+  var goldCircle = document.getElementById('goldCircle');
+  var scrollPosition = window.scrollY;
+
+  if (scrollPosition > 100) {
+    goldCircle.classList.add('scroll-show');
+  } else {
+    goldCircle.classList.remove('scroll-show');
+  }
+});
+
 
 /* section appear when scrolled */
 const the_animation = document.querySelectorAll('.animation');

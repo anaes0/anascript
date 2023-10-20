@@ -15,7 +15,6 @@
         <video id='background-video' autoplay loop muted plays-inline>
             <source src="img/video.mp4" type="video/mp4">
         </video>
-        <!-- <section id='background-video'><video autoplay muted loop src="img/video.mp4" id="video"></video></section>       -->
 
         <navbar class="navbar">
             <ul class="navbar-links">
@@ -32,15 +31,6 @@
                 <li><a href="#contact" class="underline-progress-bar">Contact<span class="slider"></span></a></li>
             </ul>
         </navbar> 
-        <!-- <div class="dropdown">
-            <i class="fa-solid fa-bars dropdown-icon" onclick="showDropdown()"></i>
-            <div id="myDropdown" class="dropdown-content">
-                <li><a href="work">Work</a></li>
-                <li><a href="skills">Skills</a></li> 
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
-            </div>
-        </div> -->
 
         <section id="welcome-section">
             <div class="intro-left">                
@@ -55,7 +45,6 @@
             </div>              
         </section>
         <section id="btn-section">
-            <!-- <button class="video-button" href="#work">See Work</button>   -->
             <a class="button video-button" href="#work">See Work</a>
         </section>       
         
@@ -65,12 +54,12 @@
         
     <button onclick="topFunction()" id="back-to-top" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
 
-    <!-- work section -->
-    <section id="work">
+    <!-- Work Section -->
+    <section id="work" class="section-lightgray">
         <h2 class="work-title animation">Find bellow, a 
             <!-- <span class="border-rounded">selection</span> -->
             <div class="circle-border">
-                <div class="circle"><span>selection</span></div>
+                <div class="circle" id="goldCircle"><span>selection</span></div>
             </div>
             of my work.
         </h2>
@@ -202,28 +191,32 @@
                         </ul>
                    </div>               
                </div>
-            </div>
-            
-                
-                        
-                              
+            </div> 
+                                   
         </div>          
     </section>
-
-    <section> 
-        <h2 class="animation">What I do</h2>
-        <p class="animation">Welcome to my page, My name is Mwendwa Bundi. I am a front-end developer and technical writer. Tell me about you!
-        </p>
+    <!-- Work Section End-->
     
-        </section>
-        <section>
-        <h1 class="animation">
-            Here we go. Again!
-        </h1>
-
-    </section>
-    
+   <!-- About Section -->
+  
+   <section id="about" class="section-white">     
    
+    <div class="about animation">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/user.jpg" alt="img" />
+        </div>
+      </div>
+      <div class="col-right">
+        <h2>About Me</h2>
+        <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <a class="button video-button" href="#contact">Contact Me</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
        
 
     </main>
